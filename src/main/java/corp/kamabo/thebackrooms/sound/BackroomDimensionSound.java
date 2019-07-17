@@ -16,9 +16,9 @@ public class BackroomDimensionSound extends LoopingSound {
 
     @Override
     public void update() {
-        this.xPosF = p.getPosition().getX();
-        this.xPosF = p.getPosition().getY();
-        this.xPosF = p.getPosition().getZ();
+        xPosF = p.getPosition().getX();
+        yPosF = p.getPosition().getY();
+        zPosF = p.getPosition().getZ();
         if(p.getEntityWorld().provider.getDimension()!=BackroomGeneration.BACKROOM_WORLD_ID){
             die();
         }
