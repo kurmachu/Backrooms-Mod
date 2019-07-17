@@ -86,42 +86,10 @@ public class BackroomChunkGenerator implements IChunkGenerator {
 
     @Override
     public void populate(int x, int z) {
-//        System.out.println(x+":"+z);
-//        for (int localX = 0; localX < 16; localX++) {
-//            for (int localZ = 0; localZ < 16; localZ++) {
-//                int imagex = ((x*16)+localX)+(image.getWidth()/2);
-//                int imagey = ((z*16)+localZ)+(image.getWidth()/2);
-//                if (imagePosValid(imagex, imagey)) {
-//                    int clr = image.getRGB(imagex, imagey);
-//                    if (clr - (-65316) == 0) {
-//                        if(world.getTileEntity(new BlockPos(((x*16)+localX), 5, ((z*16)+localZ)))==null){
-//                            world.setTileEntity(new BlockPos(((x*16)+localX), 5, ((z*16)+localZ)), BackroomBlocks.blockLight.createTileEntity(world, world.getBlockState(new BlockPos((x*16)+localX, 5, (z*16)+localZ))));
-//                        }
-//                    }
-//                }
-//            }
-//        }
     }
 
     @Override
     public boolean generateStructures(Chunk chunkIn, int x, int z) {
-        System.out.println("yegg:"+chunkIn.getPos().x+":"+chunkIn.getPos().z+"|"+x+":"+z);
-        for (int localX = 0; localX < 16; localX++) {
-            for (int localZ = 0; localZ < 16; localZ++) {
-                int imagex = ((x * 16) + localX) + (image.getWidth() / 2);
-                int imagey = ((z * 16) + localZ) + (image.getWidth() / 2);
-                if (imagePosValid(imagex, imagey)) {
-                    int clr = image.getRGB(imagex, imagey);
-                    if (clr - (-65316) == 0) {
-                        if (world.getTileEntity(new BlockPos(((x * 16) + localX), 5, ((z * 16) + localZ))) == null) {
-                            System.out.println("yes");
-                            world.setTileEntity(new BlockPos(((x * 16) + localX), 5, ((z * 16) + localZ)), BackroomBlocks.blockLight.createTileEntity(world, world.getBlockState(new BlockPos((x * 16) + localX, 5, (z * 16) + localZ))));
-                        }
-                        System.out.println("no");
-                    }
-                }
-            }
-        }
         chunkIn.enqueueRelightChecks();
         return true;
     }
