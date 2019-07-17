@@ -37,7 +37,7 @@ import java.util.List;
 import java.util.Random;
 
 @Mod.EventBusSubscriber(modid=BackroomMod.MODID)
-public class BlockLight extends BlockContainer {
+public class BlockLight extends Block {
 
     public BlockLight() {
         super(Material.GLASS);
@@ -53,16 +53,18 @@ public class BlockLight extends BlockContainer {
         //setBlockUnbreakable();
     }
 
-    @Override
-    public boolean hasTileEntity(IBlockState state) {
-        return true;
-    }
+//    @Deprecated
+//    @Override
+//    public boolean hasTileEntity(IBlockState state) {
+//        return true;
+//    }
 
-    @Nullable
-    @Override
-    public TileEntity createTileEntity(World world, IBlockState state) {
-        return new TileEntityBuzz();
-    }
+//    @Deprecated
+//    @Nullable
+//    @Override
+//    public TileEntity createTileEntity(World world, IBlockState state) {
+//        return new TileEntityBuzz();
+//    }
 
 
     @SideOnly(Side.CLIENT)
@@ -138,16 +140,5 @@ public class BlockLight extends BlockContainer {
     @Override
     public boolean canSilkHarvest(World world, BlockPos pos, IBlockState state, EntityPlayer player) {
         return false;
-    }
-
-    @Nullable
-    @Override
-    public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new TileEntityBuzz();
-    }
-
-    @Override
-    public EnumBlockRenderType getRenderType(IBlockState state) {
-        return EnumBlockRenderType.MODEL;
     }
 }
