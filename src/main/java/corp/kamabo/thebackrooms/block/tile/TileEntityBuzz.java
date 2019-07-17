@@ -3,6 +3,7 @@ package corp.kamabo.thebackrooms.block.tile;
 import corp.kamabo.thebackrooms.BackroomMod;
 import corp.kamabo.thebackrooms.sound.BackroomSounds;
 import corp.kamabo.thebackrooms.sound.LoopingSound;
+import corp.kamabo.thebackrooms.world.BackroomGeneration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -57,7 +58,7 @@ public class TileEntityBuzz extends TileEntity {
     @Override
     public void onLoad() {
         super.onLoad();
-        if (getWorld().isRemote) {
+        if (getWorld().isRemote&&getWorld().provider.getDimension()!=BackroomGeneration.BACKROOM_WORLD_ID) {
             if (sound == null) {
                 sound = new LoopingSound(BackroomSounds.buzz, pos, 0.1f);
                 Minecraft.getMinecraft().getSoundHandler().playSound(sound);
