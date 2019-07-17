@@ -23,4 +23,10 @@ public class BackroomDimensionSound extends LoopingSound {
             die();
         }
     }
+
+    @Override
+    public void die() {
+        super.die();
+        BackroomSounds.dimensionSound = null; //Remove itself from the sound listing
+    }
 }
