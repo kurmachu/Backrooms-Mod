@@ -3,6 +3,7 @@ package corp.kamabo.thebackrooms.block.tile;
 import corp.kamabo.thebackrooms.BackroomMod;
 import corp.kamabo.thebackrooms.sound.BackroomSounds;
 import corp.kamabo.thebackrooms.sound.LoopingSound;
+import corp.kamabo.thebackrooms.world.BackroomGeneration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -37,7 +38,7 @@ public class TileEntityBuzz extends TileEntity {
     public void invalidate() {
         super.invalidate();
         if (getWorld().isRemote) {
-            System.out.println("Mesothelioma invalidate.");
+//            System.out.println("Mesothelioma invalidate.");
             if (sound != null) {
                 sound.die();
                 sound = null;
@@ -57,13 +58,15 @@ public class TileEntityBuzz extends TileEntity {
     @Override
     public void onLoad() {
         super.onLoad();
-        if (getWorld().isRemote) {
+        if (getWorld().isRemote&&getWorld().provider.getDimension()!=BackroomGeneration.BACKROOM_WORLD_ID) {
             if (sound == null) {
                 sound = new LoopingSound(BackroomSounds.buzz, pos, 0.1f);
                 Minecraft.getMinecraft().getSoundHandler().playSound(sound);
             }
         }
     }
+
+    @Deprecated
     public void AttemptSucc(){
         if (getWorld().isRemote) {
 //            if (sound != null) {
@@ -90,6 +93,7 @@ public class TileEntityBuzz extends TileEntity {
             }
         }
     }
+    @Deprecated
     public void cease(){
         if (sound != null) {
                 sound.die();

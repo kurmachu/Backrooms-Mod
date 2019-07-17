@@ -13,6 +13,7 @@ import net.minecraft.util.text.TextComponentString;
 import java.util.Comparator;
 import java.util.List;
 
+@Deprecated
 public class PlaySoundsCommand extends CommandBase {
     @Override
     public String getName() {

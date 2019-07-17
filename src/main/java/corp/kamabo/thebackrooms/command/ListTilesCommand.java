@@ -19,6 +19,7 @@ import scala.collection.parallel.ParIterableLike;
 import java.util.Comparator;
 import java.util.List;
 
+@Deprecated
 public class ListTilesCommand extends CommandBase {
     @Override
     public String getName() {
