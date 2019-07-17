@@ -37,7 +37,7 @@ public class TileEntityBuzz extends TileEntity {
     public void invalidate() {
         super.invalidate();
         if (getWorld().isRemote) {
-            System.out.println("Mesothelioma invalidate.");
+//            System.out.println("Mesothelioma invalidate.");
             if (sound != null) {
                 sound.die();
                 sound = null;
@@ -64,6 +64,8 @@ public class TileEntityBuzz extends TileEntity {
             }
         }
     }
+
+    @Deprecated
     public void AttemptSucc(){
         if (getWorld().isRemote) {
 //            if (sound != null) {
@@ -90,6 +92,7 @@ public class TileEntityBuzz extends TileEntity {
             }
         }
     }
+    @Deprecated
     public void cease(){
         if (sound != null) {
                 sound.die();

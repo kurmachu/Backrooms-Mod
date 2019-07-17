@@ -62,35 +62,4 @@ public class BackroomWorldRespawn {
             }
         }
     }
-
-    @SubscribeEvent(priority = EventPriority.NORMAL)
-    public void playerChunk(EntityEvent.EnteringChunk event) {
-        if((event.getEntity() instanceof EntityPlayer)&&event.getEntity().dimension==BackroomGeneration.BACKROOM_WORLD_ID){
-            EntityPlayer player = (EntityPlayer)event.getEntity();
-            if(player.getEntityWorld().isRemote){
-                List<TileEntity> entities = player.getEntityWorld().loadedTileEntityList;
-                entities.sort(new Comparator<TileEntity>() {
-                    @Override
-                    public int compare(TileEntity o1, TileEntity o2) {
-                        return (int)(100*(o1.getPos().getDistance(player.getPosition().getX(),player.getPosition().getY(),player.getPosition().getX())-o2.getPos().getDistance(player.getPosition().getX(),player.getPosition().getY(),player.getPosition().getX())));
-                    }
-                });
-                for (TileEntity t : entities){
-                    if(t instanceof TileEntityBuzz){
-                        ((TileEntityBuzz) t).cease();
-                    }
-                }
-                int yegg = 10;
-                for (TileEntity t : entities){
-                    if(t instanceof TileEntityBuzz){
-                        ((TileEntityBuzz) t).AttemptSucc();
-                        yegg--;
-                        if(yegg<=0){
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
