@@ -1,1 +1,5 @@
-# Backrooms
+# Backrooms-Mod
+A combination of a dedicated Minecraft server and mod. Along with proprietary program. The mod aims to completely overhaul survival to fit within the backrooms setting. The github for the dedicated program will be available... *eventually.*
+## Installation
+Clone the repository, then simply open in intellij and run the forge setup tasks.
+If you open this in eclipse you you are on your own.
