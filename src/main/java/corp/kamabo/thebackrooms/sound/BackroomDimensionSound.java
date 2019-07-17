@@ -20,6 +20,7 @@ public class BackroomDimensionSound extends LoopingSound {
         yPosF = p.getPosition().getY();
         zPosF = p.getPosition().getZ();
         if(p.getEntityWorld().provider.getDimension()!=BackroomGeneration.BACKROOM_WORLD_ID){
+            System.out.println("attempting to perish");
             die();
         }
     }

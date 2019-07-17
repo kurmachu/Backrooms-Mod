@@ -37,7 +37,11 @@ public class BackroomSounds {
     @SubscribeEvent
     public static void playerMove(LivingEvent.LivingUpdateEvent event){
         if((event.getEntity() instanceof EntityPlayer)&&event.getEntity().dimension==BackroomGeneration.BACKROOM_WORLD_ID){
+            if(!Minecraft.getMinecraft().getSoundHandler().isSoundPlaying(dimensionSound)){
+                dimensionSound = null;
+            }
             if(dimensionSound==null){
+                System.out.println("zoinking egg");
                 EntityPlayer p = (EntityPlayer)event.getEntity();
                 dimensionSound= new BackroomDimensionSound(buzz,p.getPosition(),0.1f,p);
                 Minecraft.getMinecraft().getSoundHandler().playSound(dimensionSound);
