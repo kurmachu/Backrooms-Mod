@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "thebackrooms:blocks/wall",
+    "up": "thebackrooms:blocks/wall",
+    "north": "thebackrooms:blocks/plintus_wall_power_plugs",
+    "east": "thebackrooms:blocks/plintus_wall",
+    "south": "thebackrooms:blocks/plintus_wall",
+    "west": "thebackrooms:blocks/plintus_wall",
+    "particle": "thebackrooms:blocks/wall"
+  }
+}

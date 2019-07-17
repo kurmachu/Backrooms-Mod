@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "thebackrooms:chair"
+    },
+    "facing=north": {
+      "model": "thebackrooms:chair"
+    },
+    "facing=east": {
+      "model": "thebackrooms:chair",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "thebackrooms:chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thebackrooms:chair",
+      "y": 270
+    }
+  }
+}

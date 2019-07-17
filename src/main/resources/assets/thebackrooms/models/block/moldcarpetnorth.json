@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "thebackrooms:blocks/yellow_moist_carpet",
+    "up": "thebackrooms:blocks/yellow_moist_carpet_mold_1side_up",
+    "north": "thebackrooms:blocks/yellow_moist_carpet",
+    "east": "thebackrooms:blocks/yellow_moist_carpet",
+    "south": "thebackrooms:blocks/yellow_moist_carpet",
+    "west": "thebackrooms:blocks/yellow_moist_carpet",
+    "particle": "thebackrooms:blocks/yellow_moist_carpet"
+  }
+}

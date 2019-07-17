@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "thebackrooms:moldcarpetnorth"
+    },
+    "facing=north": {
+      "model": "thebackrooms:moldcarpetnorth"
+    },
+    "facing=east": {
+      "model": "thebackrooms:moldcarpetnorth",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "thebackrooms:moldcarpetnorth",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thebackrooms:moldcarpetnorth",
+      "y": 270
+    }
+  }
+}

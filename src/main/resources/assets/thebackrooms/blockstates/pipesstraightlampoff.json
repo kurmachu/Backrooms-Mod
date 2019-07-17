@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "thebackrooms:pipesstraightlampoff"
+    },
+    "facing=north": {
+      "model": "thebackrooms:pipesstraightlampoff"
+    },
+    "facing=east": {
+      "model": "thebackrooms:pipesstraightlampoff",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "thebackrooms:pipesstraightlampoff",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thebackrooms:pipesstraightlampoff",
+      "y": 270
+    }
+  }
+}

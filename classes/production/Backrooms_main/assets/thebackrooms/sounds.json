@@ -1,0 +1,11 @@
+{
+  "hum-buzz": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "thebackrooms:fluorescent lamp sound - soundbox",
+        "stream": false
+      }
+    ]
+  }
+}
