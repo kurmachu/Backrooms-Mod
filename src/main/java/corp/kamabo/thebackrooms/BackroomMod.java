@@ -61,8 +61,5 @@ public class BackroomMod {
     @Mod.EventHandler
     public void serverStart(FMLServerStartingEvent event){
         event.registerServerCommand(new ToBackroomCommand());
-        ClientCommandHandler.instance.registerCommand(new ListTilesCommand());
-        ClientCommandHandler.instance.registerCommand(new PlaySoundsCommand());
     }
-
 }
