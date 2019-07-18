@@ -19,6 +19,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import scala.collection.parallel.ParIterableLike;
 
 public class TileEntityBuzz extends TileEntity {
+    @SideOnly(Side.CLIENT)
     public LoopingSound sound;
 
     public TileEntityBuzz(){
@@ -34,6 +35,7 @@ public class TileEntityBuzz extends TileEntity {
 //            sound = null;
 //        }
 //    }
+    @SideOnly(Side.CLIENT)
     @Override
     public void invalidate() {
         super.invalidate();
@@ -55,6 +57,7 @@ public class TileEntityBuzz extends TileEntity {
 //            Minecraft.getMinecraft().getSoundHandler().playSound(sound);
 //        }
 //    }
+    @SideOnly(Side.CLIENT)
     @Override
     public void onLoad() {
         super.onLoad();
@@ -66,6 +69,7 @@ public class TileEntityBuzz extends TileEntity {
         }
     }
 
+    @SideOnly(Side.CLIENT)
     @Deprecated
     public void AttemptSucc(){
         if (getWorld().isRemote) {
