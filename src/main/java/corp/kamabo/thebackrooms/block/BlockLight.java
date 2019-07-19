@@ -85,7 +85,7 @@ public class BlockLight extends BlockContainer {
                 EntityItem item = new EntityItem(event.getWorld(),event.getPos().getX()+0.5,event.getPos().getY()-0.9,event.getPos().getZ()+0.5,new ItemStack(BackroomItems.itemGlassShard));
                 event.getWorld().spawnEntity(item);
                 Random random = new Random(System.currentTimeMillis());
-                if(random.nextInt(100)<20){
+                if(random.nextInt(100)<30){
                     ItemStack egg = new ItemStack(BackroomItems.itemPencil);
                     switch (random.nextInt(5)){
                         case 0:
@@ -95,20 +95,10 @@ public class BlockLight extends BlockContainer {
                             egg = new ItemStack(Items.LEATHER);
                             break;
                         case 2:
-                            egg = new ItemStack(Blocks.COBBLESTONE);
+                            egg = new ItemStack(Items.GLOWSTONE_DUST);
                             break;
                         case 3:
-                            switch (random.nextInt(3)){
-                                case 0:
-                                    egg = new ItemStack(Items.GOLD_NUGGET);
-                                    break;
-                                case 1:
-                                    egg = new ItemStack(Items.IRON_NUGGET);
-                                    break;
-                                case 2:
-                                    egg = new ItemStack(Items.REDSTONE);
-                                    break;
-                            }
+                            egg = new ItemStack(Items.REDSTONE);
                             break;
                         case 4:
                             egg = new ItemStack(BackroomItems.itemPencil);
