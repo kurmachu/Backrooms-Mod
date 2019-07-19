@@ -3,6 +3,7 @@ package corp.kamabo.thebackrooms.block;
 import corp.kamabo.thebackrooms.BackroomMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirectional;
+import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -19,7 +20,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockPebble extends Block {
-    public static final PropertyDirection FACING = BlockDirectional.FACING;
+    public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
     public BlockPebble() {
         super(Material.ROCK);
