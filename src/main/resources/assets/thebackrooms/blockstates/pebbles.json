@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "thebackrooms:pebble"
+    },
+    "facing=north": {
+      "model": "thebackrooms:pebble"
+    },
+    "facing=east": {
+      "model": "thebackrooms:pebble",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "thebackrooms:pebble",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "thebackrooms:pebble",
+      "y": 270
+    }
+  }
+}
