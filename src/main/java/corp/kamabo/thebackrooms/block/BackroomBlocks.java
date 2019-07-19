@@ -22,6 +22,7 @@ public class BackroomBlocks {
     public static Block blockCeiling;
     public static Block blockLight;
     public static Block blockLightBroken;
+    public static Block blockPebble;
 
     public static Block blockPipeStright;
     public static Block blockPipeValve;
@@ -37,6 +38,7 @@ public class BackroomBlocks {
         blockCeiling = new BlockCeiling();
         blockLight = new BlockLight();
         blockLightBroken = new BlockLightSmashed();
+        blockPebble = new BlockPebble();
 
         blockPipeStright = new BlockPipeStright();
         blockPipeValve = new BlockPipeValve();
@@ -55,6 +57,7 @@ public class BackroomBlocks {
                 blockCeiling,
                 blockLight,
                 blockLightBroken,
+                blockPebble,
                 blockPipeStright,
                 blockPipeValve,
                 blockWallMold);
@@ -72,6 +75,7 @@ public class BackroomBlocks {
                 new ItemBlock(blockCeiling).setRegistryName(blockCeiling.getRegistryName()),
                 new ItemBlock(blockLight).setRegistryName(blockLight.getRegistryName()),
                 new ItemBlock(blockLightBroken).setRegistryName(blockLightBroken.getRegistryName()),
+                new ItemBlock(blockPebble).setRegistryName(blockPebble.getRegistryName()),
                 new ItemBlock(blockPipeStright).setRegistryName(blockPipeStright.getRegistryName()),
                 new ItemBlock(blockPipeValve).setRegistryName(blockPipeValve.getRegistryName()),
                 new ItemBlock(blockWallMold).setRegistryName(blockWallMold.getRegistryName())
@@ -89,6 +93,7 @@ public class BackroomBlocks {
         registerRender(Item.getItemFromBlock(blockCeiling));
         registerRender(Item.getItemFromBlock(blockLight));
         registerRender(Item.getItemFromBlock(blockLightBroken));
+        registerRender(Item.getItemFromBlock(blockPebble));
         registerRender(Item.getItemFromBlock(blockPipeStright));
         registerRender(Item.getItemFromBlock(blockPipeValve));
         registerRender(Item.getItemFromBlock(blockWallMold));
