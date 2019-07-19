@@ -9,6 +9,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
@@ -18,6 +19,9 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 public class BlockPebble extends Block {
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
@@ -65,7 +69,12 @@ public class BlockPebble extends Block {
 //            case DOWN :
 //                return new AxisAlignedBB(0.7D, 0D, 0.5D, 1D, 1D, 0D);
 //        }
-        return new AxisAlignedBB(1D, 1D, 1D, 0D, 0D, 0D);
+        return new AxisAlignedBB(1D, 0.2D, 1D, 0D, 0D, 0D);
+    }
+
+    @Override
+    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn, boolean isActualState) {
+
     }
 
     @Override
@@ -93,4 +102,6 @@ public class BlockPebble extends Block {
     public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
+
+
 }

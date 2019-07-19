@@ -1,7 +1,8 @@
 {
     "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
     "textures": {
-        "pebbles": "thebackrooms:blocks/pebble"
+        "pebbles": "thebackrooms:blocks/pebble",
+        "particle": "thebackrooms:blocks/pebble"
     },
     "display": {
         "gui": {
