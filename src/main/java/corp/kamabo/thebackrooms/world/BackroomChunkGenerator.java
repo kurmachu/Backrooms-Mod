@@ -2,7 +2,9 @@ package corp.kamabo.thebackrooms.world;
 
 import com.sun.javafx.iio.ImageStorage;
 import corp.kamabo.thebackrooms.block.BackroomBlocks;
+import corp.kamabo.thebackrooms.block.BlockPebble;
 import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldProvider;
@@ -18,10 +20,13 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.Random;
 
 public class BackroomChunkGenerator implements IChunkGenerator {
     private World world;
     BufferedImage image;
+    Random random = new Random(System.currentTimeMillis());
+
     protected ChunkPrimer chunkPrimer = new ChunkPrimer();
     BackroomChunkGenerator(World worldIn){
         System.out.println(new File("layout.png").getAbsolutePath());
@@ -58,9 +63,11 @@ public class BackroomChunkGenerator implements IChunkGenerator {
                     chunkPrimer.setBlockState(localX,0,localZ,BackroomBlocks.blockYellowCarpet.getDefaultState());
                     chunkPrimer.setBlockState(localX,5,localZ,BackroomBlocks.blockCeiling.getDefaultState());
                     int clr = image.getRGB(imagex,imagey);
-                    //System.out.println(clr+":"+imagex+":"+imagey);
-                    if(clr-(-16711900)==0){
-
+//                    System.out.println(clr+":"+imagex+":"+imagey);
+                    if(clr-(-5111553)==0){
+                        if(random.nextInt(100)<1){
+                            chunkPrimer.setBlockState(localX,1,localZ,BackroomBlocks.blockPebble.getDefaultState().withProperty(BlockPebble.FACING, EnumFacing.fromAngle(random.nextDouble()*360)));
+                        }
                     }else if (clr-(-12058369)==0){
                         chunkPrimer.setBlockState(localX,1,localZ,BackroomBlocks.blockWallpaperWallBaseboard.getDefaultState());
                         chunkPrimer.setBlockState(localX,2,localZ,BackroomBlocks.blockWallpaperWall.getDefaultState());
