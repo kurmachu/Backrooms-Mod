@@ -13,6 +13,8 @@ import corp.kamabo.thebackrooms.world.BackroomGeneration;
 import corp.kamabo.thebackrooms.world.BackroomWorldProvider;
 import corp.kamabo.thebackrooms.world.BackroomWorldRespawn;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.fml.common.FMLCommonHandler;
@@ -50,6 +52,8 @@ public class BackroomMod {
 
 
         FMLCommonHandler.instance().bus().register(new BackroomWorldRespawn());
+
+        GameRegistry.addSmelting(BackroomItems.itemNail, new ItemStack(Items.IRON_NUGGET), 0.0F);
     }
 
     @Mod.EventHandler
