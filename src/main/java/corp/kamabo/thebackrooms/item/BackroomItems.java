@@ -18,11 +18,13 @@ public class BackroomItems {
     public static Item itemBaseboard;
     public static Item itemPencil;
     public static Item itemGlassShard;
+    public static Item itemNail;
 
     public static void init(){
         itemBaseboard = new ItemBaseboard();
         itemPencil = new ItemPencil();
         itemGlassShard = new ItemGlassShard();
+        itemNail = new ItemNail();
     }
 
     @SubscribeEvent
@@ -30,6 +32,7 @@ public class BackroomItems {
         event.getRegistry().registerAll(itemBaseboard);
         event.getRegistry().registerAll(itemPencil);
         event.getRegistry().registerAll(itemGlassShard);
+        event.getRegistry().registerAll(itemNail);
     }
 
     @SubscribeEvent
@@ -37,6 +40,7 @@ public class BackroomItems {
         registerRender(itemBaseboard);
         registerRender(itemPencil);
         registerRender(itemGlassShard);
+        registerRender(itemNail);
     }
 
     private static void registerRender(Item item) {
