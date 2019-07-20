@@ -13,6 +13,7 @@ tile.ceiling.name=Ceiling
 tile.lighton.name=Fluorescent Lights
 tile.lightsmash.name=Broken Fluorescent Lights
 tile.pipesvalve.name=Straight pipes with valve
+tile.pebbles.name=Pebble
 
 itemGroup.thebackrooms.backroomstab=The Backrooms
 itemGroup.thebackrooms.backroomstabnightly=The Backrooms Experimental
@@ -20,7 +21,6 @@ itemGroup.thebackrooms.backroomstabnightly=The Backrooms Experimental
 item.baseboard.name=Baseboard
 item.glassshard.name=Glass Shard
 item.pencil.name=Pencil
-item.pebbles.name=Pebble
 item.nail.name=Nail
 
 generator.backrooms=Backrooms

@@ -13,7 +13,7 @@ tile.ceiling.name=Ceiling
 tile.lighton.name=Fluorescent Lights
 tile.lightsmash.name=Broken Fluorescent Lights
 tile.pipesvalve.name=Straight pipes with valve
-title.pebbles.name=Pebble
+tile.pebbles.name=Pebble
 
 itemGroup.thebackrooms.backroomstab=The Backrooms
 itemGroup.thebackrooms.backroomstabnightly=The Backrooms Experimental
