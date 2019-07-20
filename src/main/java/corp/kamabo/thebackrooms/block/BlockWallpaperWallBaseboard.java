@@ -62,6 +62,10 @@ public class BlockWallpaperWallBaseboard extends Block {
     public static void onBreakEvent(BlockEvent.BreakEvent event) {
         if(event.getState().getBlock().equals(BackroomBlocks.blockWallpaperWallBaseboard)){
             if(!event.getPlayer().isCreative()){
+                Random random = new Random(System.currentTimeMillis());
+                if(random.nextInt(100)<20){
+                    event.getPlayer().inventory.addItemStackToInventory(new ItemStack(BackroomItems.itemNail));
+                }
                 event.getPlayer().inventory.addItemStackToInventory(new ItemStack(BackroomItems.itemBaseboard));
             }else if (event.getPlayer().isCreative()){
                 //event.getWorld().setBlockState(event.getPos(),BackroomBlocks.blockWallpaperWall.getDefaultState());
