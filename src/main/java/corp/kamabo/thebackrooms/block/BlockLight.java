@@ -44,7 +44,7 @@ public class BlockLight extends BlockContainer {
         setSoundType(SoundType.GLASS);
         setRegistryName("lighton");
         setUnlocalizedName("lighton");
-        //setHarvestLevel("pickaxe", 1);
+        setHarvestLevel("pickaxe", 0);
         setHardness(2f);
         setResistance(5000f);
         setLightLevel(1F);
