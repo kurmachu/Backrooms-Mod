@@ -20,5 +20,7 @@ itemGroup.thebackrooms.backroomstabnightly=The Backrooms Experimental
 item.baseboard.name=Baseboard
 item.glassshard.name=Glass Shard
 item.pencil.name=Pencil
+item.pebble.name=Pebble
+item.nail.name=Nail
 
 generator.backrooms=Backrooms
