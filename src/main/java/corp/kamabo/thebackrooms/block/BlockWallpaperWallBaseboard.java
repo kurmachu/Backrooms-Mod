@@ -30,7 +30,7 @@ public class BlockWallpaperWallBaseboard extends Block {
         setSoundType(SoundType.WOOD);
         setRegistryName("wallwithbaseboard");
         setUnlocalizedName("wallwithbaseboard");
-        //setHarvestLevel("pickaxe", 1);
+        setHarvestLevel("axe", 0);
         setHardness(2F);
         setResistance(5000f);
         setLightLevel(0F);
