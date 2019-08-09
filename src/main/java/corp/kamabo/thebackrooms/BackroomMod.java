@@ -29,7 +29,7 @@ import org.apache.logging.log4j.Logger;
 public class BackroomMod {
     public static final String MODID = "thebackrooms";
     public static final String NAME = "The Backrooms";
-    public static final String VERSION = "2.5";
+    public static final String VERSION = "2.6";
 
     private static Logger logger;
 
