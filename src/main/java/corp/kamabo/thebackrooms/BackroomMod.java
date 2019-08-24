@@ -13,6 +13,7 @@ import corp.kamabo.thebackrooms.world.BackroomGeneration;
 import corp.kamabo.thebackrooms.world.BackroomWorldProvider;
 import corp.kamabo.thebackrooms.world.BackroomWorldRespawn;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -54,6 +55,7 @@ public class BackroomMod {
         FMLCommonHandler.instance().bus().register(new BackroomWorldRespawn());
 
         GameRegistry.addSmelting(BackroomItems.itemNail, new ItemStack(Items.IRON_NUGGET), 0.0F);
+        GameRegistry.addSmelting(BackroomItems.itemGlassBundle, new ItemStack(Blocks.GLASS_PANE), 0.0F);
     }
 
     @Mod.EventHandler
