@@ -54,7 +54,7 @@ public class BackroomMod {
 
         FMLCommonHandler.instance().bus().register(new BackroomWorldRespawn());
 
-        GameRegistry.addSmelting(BackroomItems.itemNail, new ItemStack(Items.IRON_NUGGET), 0.0F);
+        GameRegistry.addSmelting(BackroomItems.itemNail, new ItemStack(Items.IRON_NUGGET), 0.7F);
         GameRegistry.addSmelting(BackroomItems.itemGlassBundle, new ItemStack(Blocks.GLASS_PANE), 0.0F);
     }
 
