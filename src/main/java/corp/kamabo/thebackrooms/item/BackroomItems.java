@@ -21,6 +21,7 @@ public class BackroomItems {
     public static Item itemNail;
     public static Item itemRubberBand;
     public static Item itemGlassBundle;
+    public static Item itemMakeshiftSlingshot;
 
     public static void init(){
         itemBaseboard = new ItemBaseboard();
@@ -29,6 +30,7 @@ public class BackroomItems {
         itemNail = new ItemNail();
         itemRubberBand = new ItemRubberBand();
         itemGlassBundle = new ItemGlassBundle();
+        itemMakeshiftSlingshot = new ItemMakeshiftSlingshot();
     }
 
     @SubscribeEvent
@@ -39,6 +41,7 @@ public class BackroomItems {
         event.getRegistry().registerAll(itemNail);
         event.getRegistry().registerAll(itemRubberBand);
         event.getRegistry().registerAll(itemGlassBundle);
+        event.getRegistry().registerAll(itemMakeshiftSlingshot);
     }
 
     @SubscribeEvent
@@ -49,6 +52,7 @@ public class BackroomItems {
         registerRender(itemNail);
         registerRender(itemRubberBand);
         registerRender(itemGlassBundle);
+        registerRender(itemMakeshiftSlingshot);
     }
 
     private static void registerRender(Item item) {
