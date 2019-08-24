@@ -10,9 +10,4 @@ public class ItemRubberBand extends Item {
         setRegistryName("rubberband");
         setCreativeTab(BackroomMod.creativeTab);
     }
-
-    @Override
-    public int getItemBurnTime(ItemStack itemStack) {
-        return 400;
-    }
 }
