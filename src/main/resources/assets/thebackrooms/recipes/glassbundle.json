@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thebackrooms:rubberband"
+    },
+    {
+      "item": "thebackrooms:glassshard"
+    },
+    {
+      "item": "thebackrooms:glassshard"
+    },
+    {
+      "item": "thebackrooms:glassshard"
+    }
+  ],
+  "result": {
+    "item": "thebackrooms:glassbundle"
+  }
+}
