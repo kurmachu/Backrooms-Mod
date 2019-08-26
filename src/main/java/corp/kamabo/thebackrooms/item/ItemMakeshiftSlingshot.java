@@ -38,7 +38,7 @@ public class ItemMakeshiftSlingshot extends ItemBow {
                 }
                 else
                 {
-                    return entityIn.getActiveItemStack().getItem() != Items.BOW ? 0.0F : (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 20.0F;
+                    return entityIn.getActiveItemStack().getItem() != BackroomItems.itemMakeshiftSlingshot ? 0.0F : (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 20.0F;
                 }
             }
         });
@@ -87,6 +87,7 @@ public class ItemMakeshiftSlingshot extends ItemBow {
     /**
      * Called when the player stops using an Item (stops holding the right mouse button).
      */
+    @Override
     public void onPlayerStoppedUsing(ItemStack stack, World worldIn, EntityLivingBase entityLiving, int timeLeft)
     {
         if (entityLiving instanceof EntityPlayer)
@@ -192,12 +193,13 @@ public class ItemMakeshiftSlingshot extends ItemBow {
     @Override
     public int getMaxItemUseDuration(ItemStack stack)
     {
-        return 1000;
+        return 71000;
     }
 
     /**
      * returns the action that specifies what animation to play when the items is being used
      */
+    @Override
     public EnumAction getItemUseAction(ItemStack stack)
     {
         return EnumAction.BOW;
@@ -206,6 +208,7 @@ public class ItemMakeshiftSlingshot extends ItemBow {
     /**
      * Called when the equipped item is right clicked.
      */
+    @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
@@ -228,6 +231,7 @@ public class ItemMakeshiftSlingshot extends ItemBow {
     /**
      * Return the enchantability factor of the item, most of the time is based on material.
      */
+    @Override
     public int getItemEnchantability()
     {
         return 1;
