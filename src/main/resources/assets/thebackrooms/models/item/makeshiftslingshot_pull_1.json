@@ -1,0 +1,6 @@
+{
+"parent": "item/bow",
+"textures": {
+"layer0": "thebackrooms:items/makeshiftslingshot_pull_1"
+}
+}
