@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xrx",
+    "rxr"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "thebackrooms:baseboard",
+      "data": 0
+    },
+    "r":
+    {
+      "item": "thebackrooms:rubberband",
+      "data": 0
+    }
+  },
+  "result":
+  {
+    "item": "thebackrooms:makeshiftslingshot",
+    "data": 0,
+    "count": 1
+  }
+}
