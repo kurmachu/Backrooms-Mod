@@ -12,6 +12,7 @@ tile.moldsidecarpet.name=Side mold carpet
 tile.ceiling.name=Ceiling
 tile.lighton.name=Fluorescent Lights
 tile.lightsmash.name=Broken Fluorescent Lights
+tile.lightondirty.name=Dirty Fluorescent Lights
 tile.pipesvalve.name=Straight pipes with valve
 tile.pebbles.name=Pebble
 
@@ -24,5 +25,6 @@ item.pencil.name=Pencil
 item.nail.name=Nail
 item.rubberband.name=Rubber Band
 item.glassbundle.name=Glass bundle
+item.makeshiftslingshot.name=Makeshift Slingshot
 
 generator.backrooms=Backrooms
