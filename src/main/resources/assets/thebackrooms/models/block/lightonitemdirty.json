@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "thebackrooms:blocks/dirty_light",
+    "up": "thebackrooms:blocks/dirty_light",
+    "north": "thebackrooms:blocks/ceiling",
+    "east": "thebackrooms:blocks/ceiling",
+    "south": "thebackrooms:blocks/ceiling",
+    "west": "thebackrooms:blocks/ceiling",
+    "particle": "thebackrooms:blocks/ceiling"
+  }
+}

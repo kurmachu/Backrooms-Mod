@@ -22,6 +22,7 @@ public class BackroomBlocks {
     public static Block blockCeiling;
     public static Block blockLight;
     public static Block blockLightBroken;
+    public static Block blockLightDirty;
     public static Block blockPebble;
 
     public static Block blockPipeStright;
@@ -38,6 +39,7 @@ public class BackroomBlocks {
         blockCeiling = new BlockCeiling();
         blockLight = new BlockLight();
         blockLightBroken = new BlockLightSmashed();
+        blockLightDirty = new BlockLightDirty();
         blockPebble = new BlockPebble();
 
         blockPipeStright = new BlockPipeStright();
@@ -57,6 +59,7 @@ public class BackroomBlocks {
                 blockCeiling,
                 blockLight,
                 blockLightBroken,
+                blockLightDirty,
                 blockPebble,
                 blockPipeStright,
                 blockPipeValve,
@@ -75,6 +78,7 @@ public class BackroomBlocks {
                 new ItemBlock(blockCeiling).setRegistryName(blockCeiling.getRegistryName()),
                 new ItemBlock(blockLight).setRegistryName(blockLight.getRegistryName()),
                 new ItemBlock(blockLightBroken).setRegistryName(blockLightBroken.getRegistryName()),
+                new ItemBlock(blockLightDirty).setRegistryName(blockLightDirty.getRegistryName()),
                 new ItemBlock(blockPebble).setRegistryName(blockPebble.getRegistryName()),
                 new ItemBlock(blockPipeStright).setRegistryName(blockPipeStright.getRegistryName()),
                 new ItemBlock(blockPipeValve).setRegistryName(blockPipeValve.getRegistryName()),
@@ -93,6 +97,7 @@ public class BackroomBlocks {
         registerRender(Item.getItemFromBlock(blockCeiling));
         registerRender(Item.getItemFromBlock(blockLight));
         registerRender(Item.getItemFromBlock(blockLightBroken));
+        registerRender(Item.getItemFromBlock(blockLightDirty));
         registerRender(Item.getItemFromBlock(blockPebble));
         registerRender(Item.getItemFromBlock(blockPipeStright));
         registerRender(Item.getItemFromBlock(blockPipeValve));
