@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "thebackrooms:pebblestone"
+    ]
+  },
+  "criteria": {
+    "has_item_part": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "thebackrooms:pebbles"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "thebackrooms:pebblestone"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item_part",
+      "has_the_recipe"
+    ]
+  ]
+}

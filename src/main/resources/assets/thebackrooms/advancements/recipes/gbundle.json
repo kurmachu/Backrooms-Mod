@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "thebackrooms:glassbundle"
+    ]
+  },
+  "criteria": {
+    "has_item_part": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "thebackrooms:rubberband"
+          },
+          {
+            "item": "thebackrooms:glassshard"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "thebackrooms:glassbundle"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item_part",
+      "has_the_recipe"
+    ]
+  ]
+}
