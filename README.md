@@ -24,4 +24,4 @@ Make sure you have a working enviroment, then in your favorite IDE run the `buil
 # The Server
 The server is usually available 24/7 and is hosted on `104.236.55.132`. The only mod on the server is The Backrooms. *Please note that the server is as much in development as this mod is.*
 # Contact
-If you would like to contact me or request more info, `104.236.55.132` has its own [Discord Server](). It is the recommeded way to stay up to date on updates, chat with others interested in the project or request features.
+If you would like to contact me or request more info, `104.236.55.132` has its own [Discord Server](https://discord.gg/wJBAn8B). It is the recommeded way to stay up to date on updates, chat with others interested in the project or request features.
