@@ -1,6 +1,6 @@
 # Backrooms-Mod
 The Backrooms Mod is an in-development experience that aims to create a semi-realistic backrooms-based enviroment in Minecraft.\
-The project is a combination of Mod, Server and Program. This is the GitHub for the Mod, the Program is not currently available. To check the progress of the project and to see planned features, please refer to [The Trello](https://trello.com/b/fGqeE8lz/backrooms-mod-i-guess).\
+The project is a combination of Mod, Server and Program. This is the GitHub for the Mod, [the GitHub for the Program can be found here](https://github.com/kurmachu/BackroomBuilder). To check the progress of the project and to see planned features, please refer to [The Trello](https://trello.com/b/fGqeE8lz/backrooms-mod-i-guess).\
 **Scroll down for server info** or **check directly below for a quick start guide**.
 ## I want...
 ### ...to download the mod.
