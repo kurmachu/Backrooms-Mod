@@ -75,6 +75,8 @@ public class BackroomChunkGenerator implements IChunkGenerator {
                         chunkPrimer.setBlockState(localX,4,localZ,BackroomBlocks.blockWallpaperWall.getDefaultState());
                     }else if (clr-(-65316)==0){
                         chunkPrimer.setBlockState(localX,5,localZ,BackroomBlocks.blockLight.getDefaultState());
+                    }else if (clr-(-14970786)==0){
+                        chunkPrimer.setBlockState(localX,5,localZ,BackroomBlocks.blockLightDirty.getDefaultState());
                     }
                 }
             }
