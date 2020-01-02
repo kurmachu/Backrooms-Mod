@@ -127,4 +127,22 @@ public class BlockPebble extends Block {
     }
 
 
+    //Begin code stolen from cake
+    public boolean canPlaceBlockAt(World worldIn, BlockPos pos)
+    {
+        return super.canPlaceBlockAt(worldIn, pos) ? this.canBlockStay(worldIn, pos) : false;
+    }
+
+    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
+    {
+        if (!this.canBlockStay(worldIn, pos))
+        {
+            worldIn.destroyBlock(pos,true);
+        }
+    }
+
+    private boolean canBlockStay(World worldIn, BlockPos pos)
+    {
+        return worldIn.getBlockState(pos.down()).getMaterial().isSolid();
+    }
 }
