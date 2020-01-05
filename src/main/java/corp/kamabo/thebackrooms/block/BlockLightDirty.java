@@ -80,7 +80,7 @@ public class BlockLightDirty extends BlockContainer {
                 Random random = new Random(System.currentTimeMillis());
                 if(random.nextInt(100)<50){
                     ItemStack egg = new ItemStack(BackroomItems.itemPencil);
-                    switch (random.nextInt(3)){
+                    switch (random.nextInt(4)){
                         case 0:
                             egg = new ItemStack(BackroomItems.itemNail);
                             break;
@@ -89,6 +89,9 @@ public class BlockLightDirty extends BlockContainer {
                             break;
                         case 2:
                             egg = new ItemStack(BackroomItems.itemRubberBand);
+                            break;
+                        case 3:
+                            egg = new ItemStack(Items.WHEAT_SEEDS);
                             break;
                     }
                     EntityItem item2 = new EntityItem(event.getWorld(),event.getPos().getX()+0.5,event.getPos().getY()-0.9,event.getPos().getZ()+0.5,egg);
