@@ -87,20 +87,17 @@ public class BlockLight extends BlockContainer {
                 Random random = new Random(System.currentTimeMillis());
                 if(random.nextInt(100)<30){
                     ItemStack egg = new ItemStack(BackroomItems.itemPencil);
-                    switch (random.nextInt(5)){
+                    switch (random.nextInt(4)){
                         case 0:
                             egg = new ItemStack(Items.PAPER);
                             break;
                         case 1:
-                            egg = new ItemStack(Items.LEATHER);
-                            break;
-                        case 2:
                             egg = new ItemStack(Items.GLOWSTONE_DUST);
                             break;
-                        case 3:
+                        case 2:
                             egg = new ItemStack(Items.REDSTONE);
                             break;
-                        case 4:
+                        case 3:
                             egg = new ItemStack(BackroomItems.itemPencil);
                             break;
                     }
