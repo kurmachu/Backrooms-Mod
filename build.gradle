@@ -55,6 +55,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+//    annotationProcessor 'org.apache.logging.log4j:log4j-core:2.13.0'
 }
 
 processResources {
