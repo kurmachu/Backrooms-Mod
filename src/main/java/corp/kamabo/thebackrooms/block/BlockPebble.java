@@ -1,6 +1,7 @@
 package corp.kamabo.thebackrooms.block;
 
 import corp.kamabo.thebackrooms.BackroomMod;
+import corp.kamabo.thebackrooms.block.material.BackroomMatertial;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.BlockHorizontal;
@@ -31,7 +32,7 @@ public class BlockPebble extends Block {
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
     public BlockPebble() {
-        super(Material.GROUND);
+        super(BackroomMatertial.PEBBLE);
         setRegistryName("pebbles");
         setUnlocalizedName("pebbles");
         setSoundType(SoundType.STONE);
@@ -129,6 +130,7 @@ public class BlockPebble extends Block {
 
 
     //Begin code stolen from cake
+    @Override
     public boolean canPlaceBlockAt(World worldIn, BlockPos pos)
     {
         return super.canPlaceBlockAt(worldIn, pos) ? this.canBlockStay(worldIn, pos) : false;
