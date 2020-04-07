@@ -5,7 +5,7 @@ The project is a combination of Mod, Server and Program. This is the GitHub for 
 ## I want...
 ### ...to download the mod.
 First, you will need **Forge version `1.12.2-14.23.5.2768` or later**. Then, simply [download the latest release](https://github.com/kurmachu/Backrooms-Mod/releases/latest) or [view all releases](https://github.com/kurmachu/Backrooms-Mod/releases).\
-Place the .jar in your mods folder. *If you would like to play on the server, you will need the [the latest release](https://github.com/kurmachu/Backrooms-Mod/releases/latest). If you would like to host a local world, you will need the `backroombuilder`, which is not currently available. in a compiled form. You may compile it from [here](https://github.com/kurmachu/BackroomBuilder).*
+Place the .jar in your mods folder. *If you would like to play on the server, you will need the [the latest release](https://github.com/kurmachu/Backrooms-Mod/releases/latest). If you would like to host a local world, you will need the `backroombuilder`, which is not currently available in a compiled form. You may compile it from [here](https://github.com/kurmachu/BackroomBuilder).*
 ### ...to use the latest features.
 If you want to use features which are not yet released, you will need to build the file yourself. A basic **understanding of IDEs and Java is recommended** but not required.\
 To get started, first install [IntelliJ IDEA **Community**](https://www.jetbrains.com/idea/download/) or, if you already have a Java IDE you are free to use it. If you have gone with IntelliJ, proceed to follow the **installation steps**.\
